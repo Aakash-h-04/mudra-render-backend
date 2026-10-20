@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bharatiya Natya Mudra Recognition</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Bharatiya Natya Mudra Recognition</h1>
+
+        <p class="subtitle">
+            Upload a hand image to identify the mudra.
+        </p>
+
+        <div class="card">
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+            <button id="predictButton">
+                Predict Mudra
+            </button>
+
+            <div id="previewContainer">
+                <img id="preview" alt="Preview">
+            </div>
+
+            <div id="result">
+                <h2 id="mudraName">---</h2>
+                <p id="confidence">Confidence: ---</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>
